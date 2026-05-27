@@ -1,0 +1,46 @@
+ create table address_details
+ (
+   address_id int auto_increment primary key,
+   city varchar(50) not null,
+   pin_code varchar(10) not null
+);
+
+create table user_details
+(
+  user_id int auto_increment primary key,
+  name varchar(50) not null,
+  address_id int,
+  constraint address_id_fk foreign key(address_id) references address_details(address_id)
+);
+
+
+
+insert into address_details(city,pin_code) values('Mumbai','400012');
+insert into address_details(city,pin_code) values('Thane','421352');
+insert into address_details(city,pin_code) values('Dhule','424002');
+
+insert into user_details(name,address_id) values('Seema',1);
+
+insert into user_details(name,address_id) values('Meena',2);
+
+select * from address_details;
+select * from user_details;
+
+-------------------
+1) Hibernate Mapping
+
+  1-1
+1-M
+M-M
+
+2) Lazy and eager loading
+
+3) cascade types
+  ALL
+PERIST
+MERGE
+REMOVE
+REFRESH
+DETACH
+
+4)

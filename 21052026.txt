@@ -1,0 +1,49 @@
+Hibernate---Object Relation Mapping
+JPA --- Java Persistance API
+
+A] States of Entity:-
+
+1. Transient(New)
+2. Persistent
+3. Detached
+4. Removed
+
+B]
+
+
+create database hibernate_db;
+
+use hibernate_db;
+
+create table employee_details(
+employee_id INT auto_increment primary key,
+name Varchar(50) not null,
+salary double not null
+);
+
+INSERT INTO employee_details (name, salary)
+VALUES('Abhay',150000);
+
+INSERT INTO employee_details (name, salary)
+VALUES('Veerti',150000);
+
+INSERT INTO employee_details (name, salary)
+VALUES('Poonam',150000);
+
+SELECT * FROM employee_details;
+
+SELECT * FROM employee_details WHERE employee_id = 2;                                                               
+
+
+CREATE TABLE login_details(
+login_id INT primary key,
+password Varchar(50) not null,
+invalid_login_count INT,
+max_count int,
+status  Varchar(50)
+);
+
+insert into login_details values(101,'xyz@123',0,3,'active');
+delete from login_details;
+
+SELECT * FROM login_details;

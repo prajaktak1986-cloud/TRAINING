@@ -1,0 +1,19 @@
+https://notepad.pw/msedcl
+
+Lambda Expressions
+
+ greetings = () -> {
+    	   System.out.println("Good Evening All");
+       };
+       
+       greetings.greet(); 
+
+//Functional Interface - Interface with only one abstract method
+
+
+differance between comparable and comparator
+
+Link For JSP and Servlet course
+https://youtu.be/b42CJ0r-1to?si=JupF1NiPHN9gklYS
+
+java Streams
